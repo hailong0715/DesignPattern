@@ -84,6 +84,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="builder.cpp" />
+    <ClCompile Include="director.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
