@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+     <script type="text/javascript">
+         var protocol = window.location.protocol;
+         document.write('<script type="text/javascript" src="' + protocol + '//csdnimg.cn/pubfooter/js/repoAddr2.js?v=' + Math.random() + '"></' + 'script>');
+    </script>
+
+<title>编辑文章 - 博客频道 - CSDN.NET</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link type="text/css" rel="Stylesheet" href="http://c.csdnimg.cn/pig/blog/write/css/main.css" />
+    <!--new top-->
+        <link rel="stylesheet" href="http://c.csdnimg.cn/public/common/toolbar/css/index.css">
+     <!--new top-->   
+
+    <script type="text/javascript" src="http://static.blog.csdn.net/scripts/jquery.js"></script>
+    <script type="text/javascript" src="http://static.blog.csdn.net/scripts/jquery-version.js"></script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/csdn.js"></script>
+<script type="text/javascript" src="http://c.csdnimg.cn/pig/blog/write/scripts/master.js"></script>
+        <script type="text/javascript">var statichost = "http://static.blog.csdn.net";</script>
+       
+
+        
+<link type='text/css' rel='Stylesheet' href='http://c.csdnimg.cn/pig/blog/write/css/write.css' />
+
+
+
+<script type='text/javascript' src='http://c.csdnimg.cn/pig/blog/write/scripts/jquery.autocomplete.min.js'></script>
+ <script type='text/javascript' src='http://static.blog.csdn.net/xheditor/xheditor-1.1.13-zh-cn.js'></script>
+<link type='text/css' rel='Stylesheet' href='http://c.csdnimg.cn/pig/blog/write/css/jquery.autocomplete.css' />
+</head>
+
+<body>
+     <!--new top-->
+    <script id="toolbar-tpl-scriptId" fixed="true" prod="blog" skin="black" domain = "http://blog.csdn.net" src="http://c.csdnimg.cn/public/common/toolbar/js/html.js" type="text/javascript"></script>
+     <!--new top-->
+    <div id="wrap">
+
+        <div class="head">
+
+            <div class="user_info">
+                <dl>
+                    <dt><a href="http://my.csdn.net/"><img src="http://avatar.csdn.net/4/6/F/3_hailong0715.jpg" alt="hailong0715" /></a></dt>
+                    <dd>
+                        <ul>
+                            <li class="user_name"><a href="http://my.csdn.net/" class="user_name">hailong0715</a><span>hailong0715的专栏</span></li>
+                            <li class="feed_link"><a href="http://my.csdn.net/">个人主页</a>|<a href="http://blog.csdn.net/hailong0715">我的博客</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+
+            <div style="float:right; margin-top:20px; color:Red;">
+                
+            </div>
+        </div>
+
+
+        <div class="tabs_header">
+            <ul id="ul_tab" class="tabs"  style="width:120%">
+                <li id="tab_postedit" style="display:none;"><a href="/postedit"><span>发表文章</span></a></li>
+                <li id="tab_import" style="display:none;"><a href="/import"><span>博客搬家</span></a></li>
+                <li><a href="/postlist"><span>文章管理</span></a></li>
+                <li><a href="/category"><span>类别管理</span></a></li>
+                <li><a href="/feedback"><span>评论管理</span></a></li>
+                <li><a href="/configure"><span>
+                    博客配置</span></a>
+
+                </li>
+
+                <li><a href="/configure/column"><span>博客栏目</span></a></li>
+                <li><a href="/postlist/0/all/draft"><span>草稿箱</span></a></li>
+                <li><a href="/postlist/0/all/deleted"><span>回收站</span></a></li>
+
+           
+                <li id="btn_postedit" class="write"><a href="/postedit" class="t_button">写新文章</a></li>
+                <li id="btn_import" class="write"  style="margin:5px 0 0 2px"><a href="/import" class="t_button">博客搬家</a></li>
+            </ul>
+        </div>
+        <script type="text/javascript">setTab();</script>
+
+        <script type='text/javascript' src='/content/scripts/posteditnew.js?v=1.11'></script>
+
+
+<link   type='text/css' rel='Stylesheet'  href="http://static.blog.csdn.net/css/bole_write.css" />
+
+<div id="editType"  style="display:none">0</div>
+<p class="subtit">文章标题<span style="color: green; margin-left: 18px; display: none">尊重原创，请保证您的文章为原创作品</span><input type="hidden" id="userinfo1" value="2016-07-15 14:55:15" /><input type="hidden" id="userinfo2" value="" /></p>
+<div>
+<select id="selType"><option value="0">请选择</option><option value="1">原创</option><option value="2">转载</option><option value="4">翻译</option></select>
+<input type="text" id="txtTitle" style="width:560px; height:20px; float:left;" maxlength="100" />
+
+</div>
+
+<p class="subtit">文章内容<span style="color:#ff9900;font-weight:normal;display:none;">（很抱歉，由于博客图片审核功能尚未完成，普通用户暂时关闭引用站外图片功能，请您谅解，我们会尽快开放。）</span><span id="autosave_note"></span>
+    
+  
+    <a href="/mdeditor" target="_blank">切换到MarkDown编辑器</a>
+    
+</p>
+
+<div class="section">
+   
+        <textarea id="editor" name="editor" rows="30" style="width:99.4%;"></textarea>
+</div>
+
+<style type="text/css">
+    #ol_img
+    {
+        margin: 0px 12px;
+        padding: 10px;
+    }
+
+        #ol_img li
+        {
+            list-style-type: decimal;
+        }
+
+            #ol_img li a
+            {
+                margin-left: 10px;
+            }
+</style>
+<fieldset style="margin-top: 10px; padding: 4px 10px 10px 10px;">
+    <legend>上传图片</legend>
+    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+        <tr>
+            <td valign="top">
+                <ol id="ol_img"></ol>
+                <p id="p_err" style="color: Red;"></p>
+            </td>
+            <td rowspan="2" valign="top" style="width: 240px;">
+                <div style="border: solid 1px #999; background-color: #f0f0f0; font-size: 11px; padding-left: 10px;">
+                    <p>1、图片大小不能超过<b>2M</b></p>
+                    <p>2、支持格式：.jpg .gif .png .bmp</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td valign="bottom">
+                <iframe id="frm_img_2" name="frm_img_2" src="/article/uploadimg2" frameborder="0" scrolling="no" style="width: 390px; height: 24px; float: left;"></iframe>
+                <input type="button" value="上传" style="float: left; _padding: 2px 4px;" onclick="uploadImg2(this)" />
+                <input type="radio" id="isshuiyin1" checked="checked" name="isshuiyin" value="1" />中间水印 
+                <input type="radio" id="isshuiyin2" name="isshuiyin" value="2" />右下水印
+                <input type="radio" id="isshuiyin3" name="isshuiyin" value="3" />无水印
+            </td>
+        </tr>
+    </table>
+</fieldset>
+<script type="text/javascript">
+    function showErr2(msg) {
+        $("#p_err").html("* " + msg);
+    }
+    function setPath2(url) {
+        var li = "<li><span>" + url + "</span><a href='#' onclick='javascript:insertImage2(this);return false;'>[插入]</a></li>";
+        $("#ol_img").append($(li));
+    }
+    function uploadImg2(e) {      
+        v = $('input:checked').val();
+        var shuiyin = GetShuiyinValue();
+        window.frames["frm_img_2"].document.forms[0].action = "?isadd=" + v+ "&shuiyin=" + shuiyin;
+        window.frames["frm_img_2"].document.forms[0].submit();
+    }
+    function insertImage2(e) {
+        var url = e.previousSibling.innerHTML;
+        var str = csdn.format("<img src='{0}' />", url);
+
+        //ue.execCommand('insertHtml', str);
+        xh.loadBookmark(); xh.pasteHTML(str);
+    }
+    function GetShuiyinValue() {
+        //得到父页面水印的样式
+        if (window.parent.document.getElementById('isshuiyin1').checked) {
+            return window.parent.document.getElementById('isshuiyin1').value;
+        }
+        if (window.parent.document.getElementById('isshuiyin2').checked) {
+            return window.parent.document.getElementById('isshuiyin2').value;
+        }
+        if (window.parent.document.getElementById('isshuiyin3').checked) {
+            return window.parent.document.getElementById('isshuiyin3').value;
+        }
+    }
+</script>
+
+<div id="moreDiv">
+
+    <p class="subtit">文章标签（添加Tag，你的内容能被更多人看到）<a href="http://blog.csdn.net/csdnproduct/article/details/12423189" target="_blank">我们为什么要打Tag？</a></p>
+<div style="position:relative;">
+<div id="d_tag2"></div>
+<input type="text" id="txtTag2" style="width:60%; height:20px;" maxlength="100" />（最多添加5个标签，多个标签之间用“,”分隔）
+<div id="tag2box" style="display:none;">
+<table>
+<tr><th>常用标签</th><td id="td_tag21" class="tracking-ad" data-mod="popu_133"></td></tr>
+<tr><th>推荐标签</th><td id="td_tag22" class="tracking-ad" data-mod="popu_73" ></td></tr>
+</table>
+</div>
+</div>
+
+<p class="subtit">个人分类 [<a href="/category" target="_blank">编辑分类</a>]</p>
+<div>
+<input type="text" id="txtTag" style="width:60%; height:20px;" maxlength="100" />（多个分类之间用“,”分隔）
+<div><div id="tagbox"></div></div>
+</div>
+
+<p class="subtit" style="display:none;">文章别名（URL中使用，取代文章ID）</p>
+<div style="display:none;">
+<input type="text" id="txtFileName" style="width:60%; height:20px;" maxlength="30" />（只能使用数字、字母、横线和下划线）
+</div>
+<p class="subtit">文章分类（到分类首页）</p>
+<div class="radioBox channel">
+<input type='radio' name='radChl' id='radChl1' value='1' /><label for='radChl1'>移动开发</label><input type='radio' name='radChl' id='radChl2' value='14' /><label for='radChl2'>Web前端</label><input type='radio' name='radChl' id='radChl3' value='15' /><label for='radChl3'>架构设计</label><input type='radio' name='radChl' id='radChl4' value='16' /><label for='radChl4'>编程语言</label><input type='radio' name='radChl' id='radChl5' value='17' /><label for='radChl5'>互联网</label><input type='radio' name='radChl' id='radChl6' value='6' /><label for='radChl6'>数据库</label><input type='radio' name='radChl' id='radChl7' value='12' /><label for='radChl7'>系统运维</label><input type='radio' name='radChl' id='radChl8' value='2' /><label for='radChl8'>云计算</label><input type='radio' name='radChl' id='radChl9' value='3' /><label for='radChl9'>研发管理</label><input type='radio' name='radChl' id='radChl10' value='7' /><label for='radChl10'>综合</label>
+</div>
+<p id="p_comment" class="subtit" style="display:none;">是否允许评论</p>
+<div id="d_comment" class="radioBox" style="display:none;">
+<input type="radio" name="radComment" id="radComment2" value="2" checked="checked" /><label for="radComment2">允许评论</label>
+<input type="radio" name="radComment" id="radComment1" value="1" /><label for="radComment1">禁止评论</label>
+</div>
+<p class="subtit"></p>
+
+<div id="chkHomeDiv" class="radioBox"  style="display:none" >
+<input type="checkbox" id="chkHome" value="1" /><label for="chkHome" style="padding-right:0px;">发布到CSDN博客首页（<span id="sp_tohome_note"></span>）</label>
+
+<div class="clear"></div>
+
+
+
+
+
+    
+
+
+   
+</div>
+
+
+    <div>
+        <p class="subtit">更多文章（添加关联的文章url）</p>
+       <p> 
+           <input id="inputArticleMore" type="text"  style="width:600px;"    maxlength="100" />
+           <input type="button" id="submitMoreArticle" value="添加" style="margin-left:10px;" />        
+           </p>
+    </div>
+
+        <div>
+        <div id="articlePanle">
+        </div>       
+    </div>
+<div class="clear"></div>
+<p id="p_desc" class="subtit" style="display:none;">摘要：<span class="gray">（默认自动提取您文章的前200字显示在博客首页作为文章摘要，您也可以在这里自行编辑 ）</span></p>
+<div id="d_desc">
+<textarea id="txtDesc" rows="6" style="width:99%;"></textarea>
+</div>
+
+<p style="text-indent:2em;">提示：请不要发布任何推广、广告（包括招聘）、政治、低俗等方面的内容，不要把博客当作SEO工具，否则可能会影响到您的使用。</p>
+   
+
+    <div id="checkcodearea" >
+                        
+        
+            <div style="line-height:24px;">   
+                  <span style="padding:0px 0 0px 10px;float:left;display:block;line-height:22px;">请输入计算结果（结果为数字）&nbsp;&nbsp;</span>
+                   <input type="text" id="txtCheckCode" style="width:5%; height:20px;float:left;" maxlength="4">
+                   <img src="/Image/Index?r=733364206" id="imagecode" style="padding:0px 0 0px 10px;float:left;" alt="验证码">  <a href="javascript:void(0);" id="seeagain" style="display:block;float:left;line-height:22px;margin-left:5px;">看不清</a>                                
+                   &nbsp;&nbsp;&nbsp;&nbsp;提示：自动保存和点击立即保存时不需要输入计算结果
+            </div>
+ 
+            
+</div>
+   
+<p class="subtit"></p>
+
+</div>
+
+<div class="btn_area_1">   
+     
+
+<input id="btnPublish" type="button" class="input_btn_1" value="发表文章" title="保存并跳转" />
+
+    
+
+
+<input id="btnDraft" type="button" class="input_btn_1" value="立即保存" title="保存文章并留在当前页" />
+<input id="btnCancel" type="button" class="input_btn_1" value="舍弃" />   
+    
+<span id="sp_note" class="savenote" style="display:none;"></span>
+
+</div>
+<div class="clear"></div>
+<p id="p_n" style="display:none;">提示：文章内容有<b>1</b>分钟的缓存，更改之后不会立即生效。</p>
+
+<div style="height:60px;"></div>
+
+<script type="text/javascript">
+jsonData={articleId:'0',point:'True',expert:'False',tohome_cnt:'0',tohome_max_cnt:'5',isClientUser:0,_0:'0'};
+var tags = "数据结构,数据结构（二叉树）,程序员面试100题,设计模式,零散知识,QT,操作系统,计算机网络,Windows核心编程".split(',');
+var utag2 = "装饰器模式,排序,链表,二叉树操作汇总,非递归遍历二叉树,二叉树,递归和非递归建立二叉树".split(',');
+var hostList = 'csdn.net,csdn.com,iteye.com,cmdn.net'.split(',');
+</script>
+
+<!--弹出博乐帮助-->
+<div class="mod_pop_bole_help">
+        <div class="mod_pop_bole_help_title">@博乐功能帮助<span class="close"></span></div>
+        <div class="mod_pop_bole_help_content">
+            发布文章可邀请"博乐"进行点评<br/>经过"博乐"点评的博文将有荣誉标示<br/>并有机会被推荐到博客首页，得到更多展示
+        </div>
+        <div class="mod_pop_bole_help_footer"><span class="close_know">知道了</span></div>
+    </div>
+
+<script type="text/javascript">
+    /**
+    * Created by yangwei1 on 15-4-14.
+    */
+    function comon_popup($btn, $popup, top_value) {
+        $btn.click(function () {
+            var w = $(document).width();
+            var h = $(document).height();
+            var $marker = $('<div class="marker"></div>');
+            $marker.css({
+                opacity: 0.5,
+                width: w + 'px',
+                height: h + 'px'
+            });
+
+            //位置
+            var top = $(window).height() / 2 - $popup.height() / 2 + $(window).scrollTop();
+            var top_defined = top_value;
+            $popup.css({
+                //    top:(top_defined+'px')|| (top + 'px'),
+                top: (top + 'px'),
+                left: w / 2 - $(this).width() + 'px'
+            });
+            setTimeout(function () {
+                $popup.show();
+                $popup.css({
+                    opacity: 1
+                });
+            }, 200);
+
+            $('body').find('#wrap').append($marker);
+            $popup.find(" .close").add(".close_know").click(function () {
+                $popup.css({ opacity: 0 });
+                setTimeout(function () {
+                    $popup.hide();
+                }, 200);
+                $('.marker').remove();
+            })
+
+
+
+
+        })
+
+    }
+    comon_popup($("#bole_help_bt"), $(".mod_pop_bole_help"));
+
+    </script>
+
+    </div>
+
+   
+    <script type="text/javascript" src="http://c.csdnimg.cn/rabbit/cnick/cnick.js"></script>
+
+    <script type="text/javascript">
+        document.write('<script type="text/javascript" src="http://c.csdnimg.cn/pubfooter/js/publib_footer.js?' + Math.floor(new Date() / 120000).toString(36) + '="></' + 'script>');
+    </script>
+
+    <script type="text/javascript">document.write("<img src=http://counter.csdn.net/pv.aspx?id=342 border=0 width=0 height=0>");</script>
+    <script type="text/javascript" src="http://www.csdn.net/ui/scripts/Csdn/counter.js"></script>
+     <!--new top-->
+    
+    <script id="csdn-toolbar-id"  btnId="header_notice_num" wrapId="note1" count="5" subCount="5" type="text/javascript" src="http://c.csdnimg.cn/public/common/toolbar/js/toolbar.js"></script>
+     <!--new top-->
+
+   
+  
+
+</body>
+</html>
